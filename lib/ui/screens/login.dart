@@ -158,90 +158,92 @@ class LoginState extends State<Login> {
                     onTap: () {
                       showDialog(
                           context: context,
-                          child: Dialog(
-                            child: Container(
-                              height: 250,
-                              child: Column(
-                                children: [
-                                  GestureDetector(
-                                    child: Container(
-                                      child: Icon(Icons.cancel),
-                                      margin:
-                                          EdgeInsets.only(right: 10, top: 10),
-                                      alignment: Alignment.topRight,
+                          builder: (BuildContext context) {
+                            return Dialog(
+                              child: Container(
+                                height: 250,
+                                child: Column(
+                                  children: [
+                                    GestureDetector(
+                                      child: Container(
+                                        child: Icon(Icons.cancel),
+                                        margin:
+                                            EdgeInsets.only(right: 10, top: 10),
+                                        alignment: Alignment.topRight,
+                                      ),
+                                      onTap: () {
+                                        Navigator.of(context).pop();
+                                      },
                                     ),
-                                    onTap: () {
-                                      Navigator.of(context).pop();
-                                    },
-                                  ),
-                                  Container(
-                                    child: Text(
-                                      "Forget Password?",
-                                      style: TextStyle(
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.bold,
-                                          color: Color(0xFF1d4695)),
+                                    Container(
+                                      child: Text(
+                                        "Forget Password?",
+                                        style: TextStyle(
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.bold,
+                                            color: Color(0xFF1d4695)),
+                                      ),
+                                      margin: EdgeInsets.only(top: 20),
                                     ),
-                                    margin: EdgeInsets.only(top: 20),
-                                  ),
-                                  Row(
-                                    children: <Widget>[
-                                      Flexible(
-                                        child: Container(
-                                          height: 40,
-                                          //   color: Colors.white,
-                                          margin: EdgeInsets.only(
-                                              left: 10,
-                                              right: 10,
-                                              top: 20,
-                                              bottom: 10),
-                                          child: TextFormField(
-                                            onTap: () {},
-                                            // controller: text,
-                                            // onChanged: _onChanged,
-                                            decoration: InputDecoration(
-                                              border: new OutlineInputBorder(
-                                                borderSide: BorderSide(
-                                                    color: Colors.white,
-                                                    width: 0.0),
-                                                borderRadius:
-                                                    const BorderRadius.all(
-                                                  const Radius.circular(7.0),
+                                    Row(
+                                      children: <Widget>[
+                                        Flexible(
+                                          child: Container(
+                                            height: 40,
+                                            //   color: Colors.white,
+                                            margin: EdgeInsets.only(
+                                                left: 10,
+                                                right: 10,
+                                                top: 20,
+                                                bottom: 10),
+                                            child: TextFormField(
+                                              onTap: () {},
+                                              // controller: text,
+                                              // onChanged: _onChanged,
+                                              decoration: InputDecoration(
+                                                border: new OutlineInputBorder(
+                                                  borderSide: BorderSide(
+                                                      color: Colors.white,
+                                                      width: 0.0),
+                                                  borderRadius:
+                                                      const BorderRadius.all(
+                                                    const Radius.circular(7.0),
+                                                  ),
                                                 ),
+                                                fillColor: Colors.white,
+                                                filled: true,
+                                                contentPadding: EdgeInsets.only(
+                                                    top: 10, left: 10),
+                                                //    hintText: "Email Id",
+                                                //     helperStyle: TextStyle(
+                                                //         fontSize: 12,
+                                                //         color: Colors.black26)
                                               ),
-                                              fillColor: Colors.white,
-                                              filled: true,
-                                              contentPadding: EdgeInsets.only(
-                                                  top: 10, left: 10),
-                                              //    hintText: "Email Id",
-                                              //     helperStyle: TextStyle(
-                                              //         fontSize: 12,
-                                              //         color: Colors.black26)
                                             ),
                                           ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                  Container(
-                                    width: MediaQuery.of(context).size.width,
-                                    alignment: Alignment.center,
-                                    padding: EdgeInsets.all(10),
-                                    margin: EdgeInsets.only(
-                                        top: 20, left: 10, right: 10),
-                                    color: Color(0xFF1d4695),
-                                    child: Text(
-                                      "Send",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 15,
-                                          color: Colors.white),
+                                      ],
                                     ),
-                                  )
-                                ],
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      alignment: Alignment.center,
+                                      padding: EdgeInsets.all(10),
+                                      margin: EdgeInsets.only(
+                                          top: 20, left: 10, right: 10),
+                                      color: Color(0xFF1d4695),
+                                      child: Text(
+                                        "Send",
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 15,
+                                            color: Colors.white),
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
-                            ),
-                          ));
+                            );
+                          });
                     },
                     child: Container(
                       margin: EdgeInsets.only(right: 20, top: 10),

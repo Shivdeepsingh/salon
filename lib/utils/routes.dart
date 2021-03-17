@@ -58,10 +58,4 @@ class Routes {
 
     return null;
   }
-
-  static MaterialPageRoute unknownRoute(RouteSettings settings) {
-    print("Router: " + settings.name + ' is not defined.');
-
-    return null;
-  }
 }

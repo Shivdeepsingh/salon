@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import 'package:salon/utils/routes.dart';
 
 import 'modals/appstate.dart';
-import 'utils/routes.dart';
 import 'utils/theme.dart';
 
 void main() {
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       initialRoute: "/",
       routes: Routes.routes,
       onGenerateRoute: Routes.generateRoute,
-      onUnknownRoute: Routes.unknownRoute,
+      // onUnknownRoute: Routes.unknownRoute,
     );
   }
 

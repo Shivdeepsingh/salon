@@ -117,74 +117,77 @@ class FutureNotificationsState extends State<FutureNotifications> {
                       onTap: () {
                         showDialog(
                             context: context,
-                            child: Dialog(
-                              child: Container(
-                                height: 450,
-                                child: Column(
-                                  children: [
-                                    Container(
-                                      child: Text(
-                                        "List Employee",
-                                        style: TextStyle(
-                                            fontSize: 18,
-                                            fontWeight: FontWeight.bold,
-                                            color: Color(0xFF1d4695)),
+                            builder: (BuildContext context) {
+                              return Dialog(
+                                child: Container(
+                                  height: 450,
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                        child: Text(
+                                          "List Employee",
+                                          style: TextStyle(
+                                              fontSize: 18,
+                                              fontWeight: FontWeight.bold,
+                                              color: Color(0xFF1d4695)),
+                                        ),
+                                        margin: EdgeInsets.only(
+                                            left: 20, top: 20, bottom: 20),
                                       ),
-                                      margin: EdgeInsets.only(
-                                          left: 20, top: 20, bottom: 20),
-                                    ),
-                                    Container(
-                                      child: ListView.builder(
-                                          itemCount: 5,
-                                          itemBuilder: (BuildContext context,
-                                              int index) {
-                                            return Container(
-                                              padding: EdgeInsets.all(7),
-                                              child: Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: [
-                                                  Container(
-                                                    child: Icon(Icons.person),
-                                                  ),
-                                                  Container(
-                                                    child: Text("Cavin"),
-                                                  ),
-                                                  Container(
-                                                    child: Text("1235678952"),
-                                                  ),
-                                                  Container(
-                                                    child: Checkbox(
-                                                        value: _checkedValue,
-                                                        onChanged: (value) {}),
-                                                  )
-                                                ],
-                                              ),
-                                            );
-                                          }),
-                                      height: 300,
-                                    ),
-                                    Container(
-                                      padding: EdgeInsets.only(
-                                          left: 10,
-                                          right: 10,
-                                          top: 8,
-                                          bottom: 8),
-                                      margin: EdgeInsets.only(top: 20),
-                                      color: Color(0xFF1d4695),
-                                      child: Text(
-                                        "Ok",
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.white,
-                                            fontSize: 14),
+                                      Container(
+                                        child: ListView.builder(
+                                            itemCount: 5,
+                                            itemBuilder: (BuildContext context,
+                                                int index) {
+                                              return Container(
+                                                padding: EdgeInsets.all(7),
+                                                child: Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .spaceBetween,
+                                                  children: [
+                                                    Container(
+                                                      child: Icon(Icons.person),
+                                                    ),
+                                                    Container(
+                                                      child: Text("Cavin"),
+                                                    ),
+                                                    Container(
+                                                      child: Text("1235678952"),
+                                                    ),
+                                                    Container(
+                                                      child: Checkbox(
+                                                          value: _checkedValue,
+                                                          onChanged:
+                                                              (value) {}),
+                                                    )
+                                                  ],
+                                                ),
+                                              );
+                                            }),
+                                        height: 300,
                                       ),
-                                    )
-                                  ],
+                                      Container(
+                                        padding: EdgeInsets.only(
+                                            left: 10,
+                                            right: 10,
+                                            top: 8,
+                                            bottom: 8),
+                                        margin: EdgeInsets.only(top: 20),
+                                        color: Color(0xFF1d4695),
+                                        child: Text(
+                                          "Ok",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.white,
+                                              fontSize: 14),
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
-                              ),
-                            ));
+                              );
+                            });
                       },
                       child: Container(
                         padding: EdgeInsets.only(
@@ -359,74 +362,77 @@ class FutureNotificationsState extends State<FutureNotifications> {
                       onTap: () {
                         showDialog(
                             context: context,
-                            child: Dialog(
-                              child: Container(
-                                height: 450,
-                                child: Column(
-                                  children: [
-                                    Container(
-                                      child: Text(
-                                        "List Employee",
-                                        style: TextStyle(
-                                            fontSize: 18,
-                                            fontWeight: FontWeight.bold,
-                                            color: Color(0xFF1d4695)),
+                            builder: (BuildContext context) {
+                              return Dialog(
+                                child: Container(
+                                  height: 450,
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                        child: Text(
+                                          "List Employee",
+                                          style: TextStyle(
+                                              fontSize: 18,
+                                              fontWeight: FontWeight.bold,
+                                              color: Color(0xFF1d4695)),
+                                        ),
+                                        margin: EdgeInsets.only(
+                                            left: 20, top: 20, bottom: 20),
                                       ),
-                                      margin: EdgeInsets.only(
-                                          left: 20, top: 20, bottom: 20),
-                                    ),
-                                    Container(
-                                      child: ListView.builder(
-                                          itemCount: 5,
-                                          itemBuilder: (BuildContext context,
-                                              int index) {
-                                            return Container(
-                                              padding: EdgeInsets.all(7),
-                                              child: Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: [
-                                                  Container(
-                                                    child: Icon(Icons.person),
-                                                  ),
-                                                  Container(
-                                                    child: Text("Cavin"),
-                                                  ),
-                                                  Container(
-                                                    child: Text("1235678952"),
-                                                  ),
-                                                  Container(
-                                                    child: Checkbox(
-                                                        value: _checkedValue,
-                                                        onChanged: (value) {}),
-                                                  )
-                                                ],
-                                              ),
-                                            );
-                                          }),
-                                      height: 300,
-                                    ),
-                                    Container(
-                                      padding: EdgeInsets.only(
-                                          left: 10,
-                                          right: 10,
-                                          top: 8,
-                                          bottom: 8),
-                                      margin: EdgeInsets.only(top: 20),
-                                      color: Color(0xFF1d4695),
-                                      child: Text(
-                                        "Ok",
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.white,
-                                            fontSize: 14),
+                                      Container(
+                                        child: ListView.builder(
+                                            itemCount: 5,
+                                            itemBuilder: (BuildContext context,
+                                                int index) {
+                                              return Container(
+                                                padding: EdgeInsets.all(7),
+                                                child: Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .spaceBetween,
+                                                  children: [
+                                                    Container(
+                                                      child: Icon(Icons.person),
+                                                    ),
+                                                    Container(
+                                                      child: Text("Cavin"),
+                                                    ),
+                                                    Container(
+                                                      child: Text("1235678952"),
+                                                    ),
+                                                    Container(
+                                                      child: Checkbox(
+                                                          value: _checkedValue,
+                                                          onChanged:
+                                                              (value) {}),
+                                                    )
+                                                  ],
+                                                ),
+                                              );
+                                            }),
+                                        height: 300,
                                       ),
-                                    )
-                                  ],
+                                      Container(
+                                        padding: EdgeInsets.only(
+                                            left: 10,
+                                            right: 10,
+                                            top: 8,
+                                            bottom: 8),
+                                        margin: EdgeInsets.only(top: 20),
+                                        color: Color(0xFF1d4695),
+                                        child: Text(
+                                          "Ok",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.white,
+                                              fontSize: 14),
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
-                              ),
-                            ));
+                              );
+                            });
                       },
                       child: Container(
                         padding: EdgeInsets.only(

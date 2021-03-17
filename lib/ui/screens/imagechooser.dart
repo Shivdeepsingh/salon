@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -13,7 +11,6 @@ class ImageChooser extends StatefulWidget {
 }
 
 class ImageChooserState extends State<ImageChooser> {
-  File _image;
   final picker = ImagePicker();
 
   Future getImageCamera() async {
@@ -21,7 +18,6 @@ class ImageChooserState extends State<ImageChooser> {
 
     setState(() {
       if (pickedFile != null) {
-        _image = File(pickedFile.path);
       } else {
         print('No image selected.');
       }
@@ -33,7 +29,6 @@ class ImageChooserState extends State<ImageChooser> {
 
     setState(() {
       if (pickedFile != null) {
-        _image = File(pickedFile.path);
       } else {
         print('No image selected.');
       }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:salon/ui/wiidgets/draweruser.dart';
 
 class DashBoard extends StatefulWidget {
@@ -23,29 +22,30 @@ class DashBoardState extends State<DashBoard> {
       ),
       body: WillPopScope(
         onWillPop: () {
-          return showDialog(
-              context: context,
-              barrierDismissible: false,
-              builder: (BuildContext context) {
-                return AlertDialog(
-                  title: Text("Confirm Exit"),
-                  content: Text("Are you sure you want to exit?"),
-                  actions: <Widget>[
-                    FlatButton(
-                      child: Text("YES"),
-                      onPressed: () {
-                        SystemNavigator.pop();
-                      },
-                    ),
-                    FlatButton(
-                      child: Text("NO"),
-                      onPressed: () {
-                        Navigator.of(context).pop();
-                      },
-                    )
-                  ],
-                );
-              });
+          return Future.value(true);
+          // return showDialog(
+          //     context: context,
+          //     barrierDismissible: false,
+          //     builder: (BuildContext context) {
+          //       return AlertDialog(
+          //         title: Text("Confirm Exit"),
+          //         content: Text("Are you sure you want to exit?"),
+          //         actions: <Widget>[
+          //           FlatButton(
+          //             child: Text("YES"),
+          //             onPressed: () {
+          //               SystemNavigator.pop();
+          //             },
+          //           ),
+          //           FlatButton(
+          //             child: Text("NO"),
+          //             onPressed: () {
+          //               Navigator.of(context).pop();
+          //             },
+          //           )
+          //         ],
+          //       );
+          //     });
         },
         child: SafeArea(
           child: Container(
